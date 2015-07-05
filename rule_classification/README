@@ -1,0 +1,17 @@
+Intruducion:
+
+This project is used to do rule_classification
+
+predict.py is the main file of project, It will read the rule file in the rule.txt, Also use the washing_function in clean.py.
+
+clean.py support the wash_function.
+
+rule.txt define the rule what you need and set the threshold, if result > threshold, the class label is 1, else is 0. Please follow the format. you can not only change the rule_content, but also change the weight for each rule and threshold.
+
+
+Usage:
+python predict.py
+
+
+Requirement:
+python 2.7

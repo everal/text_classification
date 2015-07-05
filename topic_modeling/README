@@ -1,0 +1,30 @@
+环境依赖：
+gensim
+scikit-learn
+
+文件说明：
+json_preprocess.py为预处理文件.
+LDA_model 为转换成LSI或LDA的模型文件。
+Grid_train 为以topic model 为基础向量，加分类器。
+
+tech_forun* 等文件，为程序运行时保存的模型文件。
+
+执行步骤：
+1.myConfig.py
+修改myConfig.py文件对应的配置项。
+
+2.preprocess.py
+对原始文件进行分词，过滤等预处理，得到分词后的文件。
+用gensim 模块生成字典，和语料。
+
+3.执行LDA_model.py 或 LSI_model.py
+选择LDA或者LSI生成model文件。
+
+4.GenSimOutput.py
+设定自己的主题文本，根据相似度计算找出最相关的文本。
+生成一个相似度由高到低的文件。
+
+5.执行Grid_train.py文件
+从上一步生成的结果文件中，人工选择一些标注数据作为训练数据，生成分类模型。
+
+
